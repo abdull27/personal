@@ -1,152 +1,146 @@
-    <!DOCTYPE html>
-    <html>
-<!--Header of the url code-->
-        <head>
-            <meta charset="utf-8">
-            <title>Abdul's personal site</title>
-            <link rel="stylesheet" href="abdul.css">
-        </head>
-<!--Body of the code-->
-        <body>
-
-        <table cellspacing="20">
-            <thead>
-                <tr>
-                    <th><!--Image displayed on site-->
-        <img src="abdul_image.png?rnd="40000" width="300" height="250" alt="abdul's profile picture">
-                    </th>
-                    <th><!--Main Header of Body-->
-            <h1>ABDUL MABOOD ANSARI</h1>
-            <!--Paragraph on body-->
-                <!--using <em>to make word in italic look</em> -->
-            <p><em>Founder of <strong>AMAQ Enterprises</strong>.</em></p>
-            <p>I am an <em>Electrical Engineer</em>. I have completed my <em>Electrical Engineering</em> in year 2020. I am a <em>Tech savvy</em>. I love <em>Coffee</em>. </p>
-                    </th>
-                </tr>
-            </thead>
-        </table>
-        <!-- Adding Horizontal line-->
-        <hr>
-            <h3>Objectives:</h3>
-            <p>I am seeking a career that is challenging and interesting and let me work on leading areas of technology. </p>
-            <p>A career which gives me a opportunities to learn innovate and enhance my skills and strengths in conjuction with my goals. </p>
-            <hr>
-
-            <!--Adding table -->
-            <table>
-                <!--Table Head-->
-                <thead>
-                    <!--Table row-->
-                    <tr>
-                        <!--Table header in bold -->
-                        <th>Work Experiences:</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <th>Year</th>
-                        <th>Work</th>
-
-                    </tr>
-                    <tr>
-                        <!--Table header without bold -->
-                        <td>2015</td>
-                        <td>Worked at <a href="https://www.myinsuranceclub.com/about-us">My Insurance Club</a> in a Sales Team.</td>
-                    </tr>
-
-                    <tr>
-                        <td>2016</td>
-                        <td>worked at <a href="https://careers.swiggy.com/#/about">Swiggy</a> as a Delivery Partner. </td>
-                    </tr>
-
-                    <tr>
-                        <td>2020</td>
-                        <td>Worked at <a href="http://gvelectricals.in">GV Electricals</a> as a Electrical Site Engineer.</td>
-                    </tr>
-
-                    <tr>
-                        <td>2022</td>
-                        <td>Worked at <a href="https://datacenter.hello.global.ntt/en/about-us">NTT DataCenter</a> as Electrical Shift Engineer. </td>
-                    </tr>
-                    <tr>
-                        <td>2023</td>
-                        <td>Currently working at <a href="https://www.ptcindia.com/about-us/">PTC India Ltd</a> as Junior Engineer. </td>
-                    </tr>                                                          
-                </tbody>
-            </table>
-        <hr>
-
-            <h3>Books read:</h3>
-        <!--Making unordered list  -->
-        <ul>
-            <li> Electrical AutoCadd.</li>
-            <li>The complete Python Pro Bootcamp.</li>
-            <li>Intoduction to Electric vehicles.</li>
-            <li>Basic Electrical engineering.</li>
-            <li>Control system.</li>
-            <li>Power Electronics.</li>
-            <li>Never Eat Alone.</li>
-        </ul>
-        <hr>
-<!-- HOBBIES-->
-        <h3>My Hobbies:</h3>
-        <!--making ordered list-->
-        <ol>
-            <li>Cooking</li>
-            <!--Nesting the ordered list with roman numbers-->
-            <ol start type="i"><li>Biryani</li>
-            <li>Korma etc..</li>
-            </ol>
-            <li>Riding Motorcycles</li>
-            <li>Cricket</li>
-            <li>Reading Books</li>
-        </ol>
-        <hr>
-        <h3>Skills:</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul's Personal Site</title>
+    <link rel="stylesheet" href="abdul.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e1e2f, #3a3a5f);
+            color: #fff;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        header {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-bottom: 3px solid #ffcc00;
+            transition: background 0.3s ease-in-out;
+        }
+        header:hover {
+            background: rgba(0, 0, 0, 0.9);
+        }
+        .profile-img {
+            border-radius: 50%;
+            width: 180px;
+            height: 180px;
+            border: 4px solid #ffcc00;
+            transition: transform 0.3s ease-in-out;
+        }
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1, h3 {
+            color: #ffcc00;
+        }
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #ffffff;
+        }
+        table {
+            width: 100%;
+            margin-top: 10px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #fff;
+        }
+        ul, ol {
+            list-style: none;
+            padding: 0;
+        }
+        ul li, ol li {
+            padding: 5px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            display: inline-block;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="abdul_image.png" class="profile-img" alt="Abdul's Profile Picture">
+        <h1>Abdul Mabood Ansari</h1>
+        <p><em>Founder of <strong>AMAQ Enterprises</strong> | Electrical Engineer</em></p>
+        <p>Coffee Lover ☕ | Tech Savvy 💡</p>
+    </header>
+    
+    <div class="container">
+        <h3>Objectives</h3>
+        <p>Seeking a challenging and innovative career in technology to grow my skills and contribute effectively.</p>
+        
+        <h3>Work Experience</h3>
         <table>
-            <tbody>
-                <tr>
-                    <td>Communication skills</td>
-                    <td>⭐⭐⭐⭐</td>
-                </tr>
-
-                <tr>
-                    <td>Analysis & Critical thinking</td>
-                    <td>⭐⭐⭐⭐</td>
-                </tr>
-
-                <tr>
-                    <td>Computer proficiency</td>
-                    <td>⭐⭐⭐</td>
-                </tr>
-
-                <tr>
-                    <td>Problem solving</td>
-                    <td>⭐⭐⭐⭐</td>
-                </tr>
-
-                <tr>
-                    <td>LeaderShip qualities</td>
-                    <td>⭐⭐⭐</td>
-                </tr>
-            </tbody>
+            <tr><th>Year</th><th>Company</th></tr>
+            <tr><td>2015</td><td><a href="https://www.myinsuranceclub.com/about-us">My Insurance Club</a> - Sales Team</td></tr>
+            <tr><td>2016</td><td><a href="https://careers.swiggy.com/#/about">Swiggy</a> - Delivery Partner</td></tr>
+            <tr><td>2020</td><td><a href="http://gvelectricals.in">GV Electricals</a> - Electrical Site Engineer</td></tr>
+            <tr><td>2022</td><td><a href="https://datacenter.hello.global.ntt/en/about-us">NTT Data Center</a> - Electrical Shift Engineer</td></tr>
+            <tr><td>2023</td><td><a href="https://www.ptcindia.com/about-us/">PTC India Ltd</a> - Junior Engineer</td></tr>
         </table>
-        <hr>
-        <h3>Social Media:</h3>
-        <!--Adding anchor tags so that we can directly with the  relative website -->
-        <p><a href="https://www.linkedin.com/in/abdul-mabood-ansari-4125ab1a3"><em>LinkedIn</em></a></p>
-        <hr>
-        <h3>Contact Details:</h3>
-        <p><em>+91 82867 17290</em></p>
-        <p><em>ansariabdul55@gmail.com</em></p>
-        <hr>
-        <h3>Address:</h3>
-        <p><em>Sakinaka, Andheri(East), Mumbai-400072</em></p>
-
-
-
-
-        </body>
-
-    </html>
+        
+        <h3>Skills</h3>
+        <ul>
+            <li>⚡ Communication Skills - ⭐⭐⭐⭐</li>
+            <li>⚡ Critical Thinking - ⭐⭐⭐⭐</li>
+            <li>⚡ Computer Proficiency - ⭐⭐⭐</li>
+            <li>⚡ Problem Solving - ⭐⭐⭐⭐</li>
+            <li>⚡ Leadership - ⭐⭐⭐</li>
+        </ul>
+        
+        <h3>Books Read</h3>
+        <ul>
+            <li>📖 Electrical AutoCAD</li>
+            <li>📖 The Complete Python Pro Bootcamp</li>
+            <li>📖 Introduction to Electric Vehicles</li>
+            <li>📖 Basic Electrical Engineering</li>
+            <li>📖 Control Systems</li>
+            <li>📖 Power Electronics</li>
+            <li>📖 Never Eat Alone</li>
+        </ul>
+        
+        <h3>Hobbies</h3>
+        <ol>
+            <li>🍛 Cooking (Biryani, Korma, etc.)</li>
+            <li>🏍️ Riding Motorcycles</li>
+            <li>🏏 Cricket</li>
+            <li>📚 Reading Books</li>
+        </ol>
+        
+        <h3>Contact</h3>
+        <p>📞 <a href="tel:+918286717290">+91 82867 17290</a></p>
+        <p>✉️ <a href="mailto:ansariabdul55@gmail.com">ansariabdul55@gmail.com</a></p>
+        <p>📍 Sakinaka, Andheri (East), Mumbai - 400072</p>
+        
+        <h3>Social Media</h3>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/abdul-mabood-ansari-4125ab1a3">🔗 LinkedIn</a>
+        </div>
+    </div>
+</body>
+</html>
